@@ -21,7 +21,7 @@ class LinkedList(AbstractLinkedList):
         return "[" + items + "]"
 
     def __len__(self):
-        return reduce(lambda x,y: x+1, [node for node in self], 0)
+        return reduce(lambda x,y: x+1, [item for item in self], 0)
 
     def __iter__(self):
         current = self.start
